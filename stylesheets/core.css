@@ -1,7 +1,1 @@
-body{
-	background-color: #aaa;
-}
-
-h1{
-	color:blue;
-}
+@import url("screen.css");
