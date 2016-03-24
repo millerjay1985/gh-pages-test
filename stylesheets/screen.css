@@ -11,8 +11,8 @@
 }
 
 blockquote {
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 60px;
+  font-family: 'Fjalla One', sans-serif !imporatant;
+  font-size: 60px !imporatant;
   color: #ccc;
   border: 0 !important;
   //padding: 30px 25px 15px 25px;
@@ -21,8 +21,8 @@ blockquote {
 blockquote footer {
   text-align: right;
   color: #fff !important;
-  font-size: 30px;
-  padding-top: 20px;
+  font-size: 30px !important;
+  padding-top: 20px !important;
 }
 
 body {
