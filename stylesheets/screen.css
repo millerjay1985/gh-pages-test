@@ -7,7 +7,7 @@ html, body {
 }
 
 div.shell {
-  display: block;
+  /*display: block;*/
   max-width: 750px;
   height: 450px;
   margin: 0 auto;
