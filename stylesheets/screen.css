@@ -1,4 +1,20 @@
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+body {
+  background-color: #ccc !important;
+}
+
+.mybox {
+  position: relative;
+  width: 60%;
+  margin: 10% 20%;
+  //height: 50%;
+  background-color: #fff !important;
+  border-radius: 5px;
+}
+.mybox button{
+  color:#fff;
+  margin: 15px !important;
+}
 
 .inner {
   position: relative;
@@ -19,22 +35,9 @@ blockquote {
 
 blockquote footer {
   text-align: right;
-  color: #fff !important;
+  color: #ccc !important;
   font-size: 20px !important;
   padding-top: 20px !important;
-}
-
-body {
-  background-color: #ccc !important;
-}
-
-.mybox {
-  position: relative;
-  width: 60%;
-  margin: 10% 20%;
-  //height: 50%;
-  background-color: #fff !important;
-  border-radius: 5px;
 }
 
 .lower {
@@ -43,13 +46,4 @@ body {
   margin-top: 2%;
   margin-left: 1%;
   margin-bottom: 5%;
-}
-
-.mybox button{
-  color:#fff;
-  margin: 15px !important;
-}
-
-blockquote footer{
-  color:#ccc !important;
 }
