@@ -14,7 +14,7 @@ blockquote {
   font-family: 'Fjalla One', sans-serif;
   font-size: 30px;
   color: #ccc;
-  border: 0;
+  border: 0 !important;
   //padding: 30px 25px 15px 25px;
 }
 
