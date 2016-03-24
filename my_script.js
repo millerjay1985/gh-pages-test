@@ -1,4 +1,4 @@
-/*
+
 $(document).ready(function() {
 	$("#getMessage").click(function()){
 		$.getJSON("json_data.json", function(obj)){
@@ -8,7 +8,7 @@ $(document).ready(function() {
 		}
 	}
 }
-*/
+/*
 
 var q1 = '<blockquote>"Victory goes to the player who makes the next-to-last mistake."<footer> Savielly Grigorievitch Tartakower </footer></blockquote>';
 var q2 = '<blockquote>"If a man does his best, what else is there?"<footer>General George S. Patton</footer></blockquote>';
