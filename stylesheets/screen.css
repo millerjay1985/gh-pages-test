@@ -10,7 +10,7 @@ div.shell {
   max-height: 450px;
   max-width: 600px;
   margin: 10% auto;
-  /*overflow: hidden;*/
+  overflow: hidden;
   border-radius: 5px;
 }
 
