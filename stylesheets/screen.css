@@ -3,6 +3,10 @@ body {
   background-color: #ccc !important;
 }
 
+.container-fluid {
+  max-height: 450px !important;
+}
+
 .mybox {
   position: relative;
   width: 60%;
