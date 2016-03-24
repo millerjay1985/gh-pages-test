@@ -41,17 +41,16 @@ body {
 .lower {
   position: relative;
   width: 98%;
-  ;
   margin-top: 2%;
   margin-left: 1%;
   margin-bottom: 5%;
-  //background-color: #aaa;
+  background-color: #fff;
   //height: 20%;
 }
 
 .mybox button{
   color:#fff;
-  padding: 15px !important;
+  margin: 15px !important;
 }
 
 blockquote footer{
