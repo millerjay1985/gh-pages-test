@@ -4,13 +4,13 @@ div.shell {
   display: block;
   width: 670px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .mybox {
   position: relative;
   width: 60%;
   margin: 10% 20%;
-  /*background-color: #fff;*/
   border-radius: 5px;
 }
 .mybox button{
