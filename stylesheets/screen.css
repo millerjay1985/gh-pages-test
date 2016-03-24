@@ -2,7 +2,7 @@
 
 div.shell {
   display: block;
-  width: 670px;
+  max-width: 670px;
   margin: 0 auto;
   background-color: #fff !important;
 }
