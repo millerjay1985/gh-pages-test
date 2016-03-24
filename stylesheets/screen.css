@@ -1,8 +1,11 @@
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 
-body{
+html, body {
+  width: 100%;
+  height: 100%;
   background-color: #ccc;
 }
+
 div.shell {
   display: block;
   max-width: 750px;
