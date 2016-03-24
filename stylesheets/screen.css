@@ -6,10 +6,10 @@ html, body {
 }
 
 div.shell {
-  /*max-height: 450px;
-  max-width: 600px;*/
+  /*max-height: 450px;*/
+  max-width: 600px;
   margin: 10% auto;
-  /*overflow: hidden;*/
+  overflow: hidden;
   background-color: #fff;
   border-radius: 5px;
 }
