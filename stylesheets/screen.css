@@ -12,13 +12,13 @@ div.shell {
   margin: 10% auto;
   background-color: #fff;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .mybox {
   position: relative;
   width: 90%;
   margin: 10% 5%;
-  border-radius: 5px;
 }
 .mybox button{
   color:#fff;
