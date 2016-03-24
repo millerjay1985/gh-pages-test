@@ -3,8 +3,8 @@ body {
   background-color: #ccc;
 }
 
-.shell {
-
+div .shell {
+  max-height: 450px;
 }
 
 .mybox {
