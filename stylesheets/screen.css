@@ -1,7 +1,4 @@
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-.shell{
-  width: 700px;
-}
 
 .inner {
   position: relative;
@@ -15,7 +12,7 @@
 
 blockquote {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 30px;
+  font-size: 60px;
   color: #ccc;
   border: 0 !important;
   //padding: 30px 25px 15px 25px;
@@ -24,7 +21,7 @@ blockquote {
 blockquote footer {
   text-align: right;
   color: #fff !important;
-  font-size: 18px;
+  font-size: 30px;
   padding-top: 20px;
 }
 
