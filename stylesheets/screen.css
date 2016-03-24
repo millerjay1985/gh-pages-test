@@ -4,8 +4,10 @@ body {
   background-color: #ccc;
 }
 
-div .shell {
-  max-height: 450px;
+div.shell {
+  display: block;
+  width: 670px;
+  margin: 0 auto;
 }
 
 .mybox {
