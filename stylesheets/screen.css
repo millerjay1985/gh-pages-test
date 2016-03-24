@@ -33,7 +33,7 @@ body {
   width: 60%;
   margin: 10% 20%;
   //height: 50%;
-  background-color: #fff;
+  background-color: #fff !important;
   border-radius: 5px;
 }
 
