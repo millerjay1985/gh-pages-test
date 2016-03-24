@@ -1,5 +1,10 @@
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 
+.container-fluid{
+  width:50% !important;
+  margin-left: 25% !important;
+}
+
 .inner {
   position: relative;
   width: 98%;
@@ -31,9 +36,8 @@ body {
 
 .mybox {
   position: relative;
-  width: 50%;
-  ;
-  margin: 10% 25%;
+  width: 60%;
+  margin: 10% 20%;
   //height: 50%;
   background-color: #fff;
   border-radius: 5px;
