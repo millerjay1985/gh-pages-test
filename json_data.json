@@ -1,10 +1,10 @@
 {
 	"p1":{
 		"name":"Jon",
-		"age":30,
+		"age":30
 	},
 	"p2":{
 		"name":"Lexie",
-		"age":29,
+		"age":29
 	}
 }
