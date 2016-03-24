@@ -13,6 +13,7 @@ div.shell {
   margin: 0 auto;
   background-color: #fff;
   overflow: hidden;
+  position: absolute;
 }
 
 .mybox {
