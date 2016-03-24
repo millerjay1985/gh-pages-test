@@ -1,10 +1,11 @@
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 body {
-  background-color: #ccc;
+  background-color: #ccc !important;
 }
 
 .shell {
-  max-height: 450px;
+  max-height: 450px !important;
+  max-width: 700px !important;
 }
 
 .mybox {
