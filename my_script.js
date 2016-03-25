@@ -1,5 +1,5 @@
 
-(document).ready(function() {
+$(document).ready(function() {
   $.ajax({
     url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
     dataType: "jsonp",
