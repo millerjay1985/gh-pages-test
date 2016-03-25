@@ -5,7 +5,7 @@ $.ajax({
   dataType: "jsonp",
   jsonpCallback: "myFunction",
   success: function(data) {
-    var div = $(.message);
+    var div = $(".message");
     div.empty();
     var quote = data[0].quote;
     div.append(quote); 
