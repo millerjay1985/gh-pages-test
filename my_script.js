@@ -8,7 +8,7 @@ $.ajax({
     for(var d in data){
       var person = data[d];
       var name = person.name;
-      console.log(dname);
+      console.log(name);
     }
   }
 })
