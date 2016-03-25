@@ -1,7 +1,7 @@
 
 //$(document).ready(function() {}
 $.ajax({
-  url: "http://millerjay1985/gh-pages-test/json_data.json.js",
+  url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
   dataType: "jsonp",
   //jsonpCallback: "myFunction"
   success: function(data) {console.log(data);}
