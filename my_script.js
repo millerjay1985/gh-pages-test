@@ -13,8 +13,9 @@ $(document).ready(function() {
         var div = $(".message");
         //first empty the div
         div.empty();
-        var quote = data[0].quote;
-        var author = data[0].author
+        var item = data[Random()];
+        var quote = item.quote;
+        var author = item.author;
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>"); 
       }
