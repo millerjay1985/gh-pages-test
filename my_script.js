@@ -4,7 +4,11 @@ $.ajax({
   url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
   dataType: "jsonp",
   jsonpCallback: "myFunction",
-  success: function(data) {console.log(data);}
+  success: function(data) {
+    for(var d in data){
+    console.log(d.name);
+    }
+  }
 })
 
 /*
