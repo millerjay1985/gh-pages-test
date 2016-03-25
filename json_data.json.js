@@ -1,10 +1,1 @@
-myFunction(
-	"p1":{
-		"name":"Jon",
-		"age":30
-	},
-	"p2":{
-		"name":"Lexie",
-		"age":29
-	}
-);
+myFunction([{"author":"jon","quote":"life's a bitch"},{"author":"Lexie","quote":"what's good pimp?"}]);
