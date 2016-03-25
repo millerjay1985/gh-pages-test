@@ -5,11 +5,7 @@ $.ajax({
   dataType: "jsonp",
   jsonpCallback: "myFunction",
   success: function(data) {
-    for (var i in data[0]){
-      var person = data[0][i];
-      var name = person.name;
-      console.log(name);
-    }
+      console.log(data[0][0].name);
   }
 })
 
