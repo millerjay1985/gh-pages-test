@@ -5,7 +5,7 @@ $.ajax({
   dataType: "jsonp",
   jsonpCallback: "myFunction",
   success: function(data) {
-      console.log(data[0][0].name);
+      console.log(data[0].p1.name);
   }
 })
 
