@@ -2,7 +2,7 @@
 $(document).ready(function() {
   
   $(#getMessage).click(function(){ alert("hey")});
-  $.ajax({
+  /*$.ajax({
     url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
     dataType: "jsonp",
     jsonpCallback: "myFunction",
@@ -13,7 +13,7 @@ $(document).ready(function() {
       var author = data[0].author
       div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>"); 
     }
-  });
+  });*/
 });
 /*
 
