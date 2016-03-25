@@ -3,7 +3,7 @@ $(document).ready(function() {
 $.ajax({
   url: "http://millerjay1985/gh-pages-test/json_data.json.js",
   dataType: "jsonp",
-  jsonpCallback: "myFunction"
+  //jsonpCallback: "myFunction"
   success: function(data) {console.log(data);}
 })
 }
