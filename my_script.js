@@ -21,6 +21,22 @@ $(document).ready(function() {
     });
   });
 });
+
+var uniqueRandoms = [];
+var numRandoms = 5;
+function Random() {
+    // refill the array if needed
+    if (!uniqueRandoms.length) {
+        for (var i = 0; i < numRandoms; i++) {
+            uniqueRandoms.push(i);
+        }
+    }
+    var index = Math.floor(Math.random() * uniqueRandoms.length);
+    var val = uniqueRandoms[index];
+    // now remove that value from the array
+    uniqueRandoms.splice(index, 1);
+    return val;
+}
 /*
 
 var q1 = '<blockquote>"Victory goes to the player who makes the next-to-last mistake."<footer> Savielly Grigorievitch Tartakower </footer></blockquote>';
@@ -40,22 +56,6 @@ var q14 = '<blockquote>"I\'m living so far beyond my income that we may almost b
 var q15 = '<blockquote>"In the End, we will remember not the words of our enemies, but the silence of our friends."<footer>Martin Luther King Jr.</footer></blockquote>';
 
 var array = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15];
-
-var uniqueRandoms = [];
-var numRandoms = 15;
-function Random() {
-    // refill the array if needed
-    if (!uniqueRandoms.length) {
-        for (var i = 0; i < numRandoms; i++) {
-            uniqueRandoms.push(i);
-        }
-    }
-    var index = Math.floor(Math.random() * uniqueRandoms.length);
-    var val = uniqueRandoms[index];
-    // now remove that value from the array
-    uniqueRandoms.splice(index, 1);
-    return val;
-}
 
 var x = array[Random()];
 
