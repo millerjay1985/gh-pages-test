@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   
-  $(#getMessage).click(function(){ alert("hey")});
+  $('#getMessage').click(function(){ alert("hey")});
   /*$.ajax({
     url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
     dataType: "jsonp",
