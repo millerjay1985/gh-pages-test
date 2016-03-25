@@ -1,4 +1,4 @@
-{
+myFunction([{
 	"p1":{
 		"name":"Jon",
 		"age":30
@@ -7,4 +7,4 @@
 		"name":"Lexie",
 		"age":29
 	}
-}
+}]);
