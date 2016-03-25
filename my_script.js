@@ -1,16 +1,21 @@
 
 $(document).ready(function() {
-  
+  //triggers ajax method once new quote button is pushed
   $('#getMessage').click(function(){ 
+    //ajax method allows us to use JSONP with git-pages
     $.ajax({
+      //this is the url to my json.js file
       url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
       dataType: "jsonp",
+      //this is the name of the function in my .json.js file
       jsonpCallback: "myFunction",
       success: function(data) {
         var div = $(".message");
+        //first empty the div
         div.empty();
         var quote = data[0].quote;
         var author = data[0].author
+        //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>"); 
       }
     });
