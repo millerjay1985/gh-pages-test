@@ -1,10 +1,10 @@
 
 $(document).ready(function() {
 $.ajax({
-  url: "http://strd6.github.io/md/v0.3.2.json.js",
+  url: "http://millerjay1985/gh-pages-test/json_data.json.js",
   dataType: "jsonp",
-  jsonpCallback: "STRd6/md:v0.3.2"
-  success: function(data) { ... }
+  jsonpCallback: "myFunction"
+  success: function(data) {console.log(data)};
 })
 }
 /*
