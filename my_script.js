@@ -8,7 +8,8 @@ $.ajax({
     var div = $(".message");
     div.empty();
     var quote = data[0].quote;
-    div.append(quote); 
+    var author = data[0].author
+    div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>"); 
   }
 })
 
