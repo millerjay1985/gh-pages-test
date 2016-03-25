@@ -6,7 +6,9 @@ $.ajax({
   jsonpCallback: "myFunction",
   success: function(data) {
     for(var d in data){
-    console.log(d.name);
+      var person = data[d];
+      var name = person.name;
+      console.log(dname);
     }
   }
 })
