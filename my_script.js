@@ -1,12 +1,12 @@
 
-$(document).ready(function() {
+$(document).ready(function() {}
 $.ajax({
   url: "http://millerjay1985/gh-pages-test/json_data.json.js",
   dataType: "jsonp",
   //jsonpCallback: "myFunction"
   success: function(data) {console.log(data);}
 })
-}
+
 /*
 
 var q1 = '<blockquote>"Victory goes to the player who makes the next-to-last mistake."<footer> Savielly Grigorievitch Tartakower </footer></blockquote>';
