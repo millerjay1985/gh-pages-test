@@ -1,16 +1,11 @@
 
 $(document).ready(function() {
-	$.getJSON( "json_data.json", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
-  });
- 
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "body" );
-});
+$.ajax({
+  url: "http://strd6.github.io/md/v0.3.2.json.js",
+  dataType: "jsonp",
+  jsonpCallback: "STRd6/md:v0.3.2"
+  success: function(data) { ... }
+})
 }
 /*
 
