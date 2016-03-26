@@ -3,6 +3,7 @@ $(document).ready(function() {
   //triggers ajax method once new quote button is pushed
   var item;
   var quote = $(".quotes").html();
+  quote = quote.replace(" ", "%20");
   var author;
   $("a[href='http://twitter.com/share?text=hey%20sugar']").attr('href', 'https://twitter.com/share?text=Hello%20world');
   $('#getMessage').click(function(){ 
