@@ -58,15 +58,7 @@ blockquote footer {
   margin-bottom: 5%;
 }
 
-#twitter-follow-bt {
-  width: 160px;
-  height: 30px;
-  background-color: #ccc;
+a {
   color: #fff;
-  border-radius: 5px;
-}
-    
-#twitter-follow-bt * {
-  opacity: 0;
-  filter:alpha(opacity=0); /* IE 8 fix */
+  background-color: #ccc;
 }
