@@ -8,6 +8,9 @@ $(document).ready(function() {
   $(".box-clr").css("background-color", "#fff");
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $('#getMessage').click(function(){ 
+    
+    colorChange();
+
     //this is the ajax method being called 
     ajax_test(function(array) {
         var div = $(".message");
@@ -18,7 +21,6 @@ $(document).ready(function() {
         author = item.author;
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
-        colorChange();
         quote = quote.replace(" ", "%20");
         $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
