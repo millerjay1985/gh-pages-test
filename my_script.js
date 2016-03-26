@@ -7,6 +7,7 @@ $(document).ready(function() {
   var author;
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $(".body-clr").css("background-color", colors[Random(5)]);
+  console.log(colors[Random(5)]);
   $(".box-clr").css("background-color", "#fff");
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
@@ -55,7 +56,7 @@ function Random(numRandoms) {
     return val;
 }
 
-var colors = {#6600CC, #9999FF, #33CCFF, #990066, #FF6633};
+var colors = {"#6600CC", "#9999FF", "#33CCFF", "#990066", "#FF6633"};
 /*
 
 var q1 = '<blockquote>"Victory goes to the player who makes the next-to-last mistake."<footer> Savielly Grigorievitch Tartakower </footer></blockquote>';
