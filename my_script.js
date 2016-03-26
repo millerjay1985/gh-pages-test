@@ -19,7 +19,7 @@ $(document).ready(function() {
       quote = item.quote;
       author = item.author;        
       //appends data to the div with the message class
-      div.append("<blockquote>"+ quote + "<footer style='color:orange'>" + author + "</footer>" + "</blockquote>");
+      div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
       quote = quote.replace(" ", "%20");
       $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
@@ -63,7 +63,7 @@ function colorChange(){
   color = colors[Random(5)];
   $(".body-clr").css("background-color", color);
   $(".txt-clr").css("color", color);
-  $("footer").css("color", color);
+  $("blockquote").css("color", color);
 }
 /*
 
