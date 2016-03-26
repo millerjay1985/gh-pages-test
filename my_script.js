@@ -4,7 +4,7 @@ $(document).ready(function() {
   var item;
   var quote = $(".quotes").html();
   var author;
-  $("a[href='http://twitter.com/share?text=hey%20sugar']").attr('href', 'https://twitter.com/share?text=Hello%20world');
+  //$("a[href='http://twitter.com/share?text=hey%20sugar']").attr('href', 'https://twitter.com/share?text=Hello%20world');
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
     ajax_test(function(array) {
