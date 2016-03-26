@@ -25,11 +25,11 @@ $(document).ready(function() {
       //async: false // <- this turns it into synchronous
     });*/
     
-    ajax_test(function(item, quote, author) {
+    ajax_test(function(array, quote, author) {
         var div = $(".message");
         //first empty the div
         div.empty();
-        item = data[Random()];
+        item = array[Random()];
         quote = item.quote;
         author = item.author;
         //appends data to the div with the message class
