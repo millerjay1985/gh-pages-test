@@ -6,13 +6,14 @@ $(document).ready(function() {
   quote = quote.replace(" ", "%20");
   var author;
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
+  $(".")
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
     ajax_test(function(array) {
         var div = $(".message");
         //first empty the div
         div.empty();
-        item = array[Random()];
+        item = array[Random(15)];
         quote = item.quote;
         author = item.author;
         //appends data to the div with the message class
@@ -21,17 +22,6 @@ $(document).ready(function() {
         $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
   });
-  /*
-  twttr.widgets.createShareButton(
-          "https:\/\/dev.twitter.com\/web\/tweet-button",
-          document.getElementById("tweet"),
-          {
-            size: "large",
-            //via: "twitterdev",
-            related: "twitterapi,twitter",
-            text: quote,
-            hashtags: "me"
-        });*/
 });
 
 //this function returns an array from the callback function in the JSONP file
@@ -49,8 +39,8 @@ function ajax_test(callback){
 }  
 
 var uniqueRandoms = [];
-var numRandoms = 15;
-function Random() {
+
+function Random(numRandoms) {
     // refill the array if needed
     if (!uniqueRandoms.length) {
         for (var i = 0; i < numRandoms; i++) {
@@ -63,6 +53,8 @@ function Random() {
     uniqueRandoms.splice(index, 1);
     return val;
 }
+
+var colors = {#6600CC, #9999FF, #33CCFF, #990066, #FF6633};
 /*
 
 var q1 = '<blockquote>"Victory goes to the player who makes the next-to-last mistake."<footer> Savielly Grigorievitch Tartakower </footer></blockquote>';
