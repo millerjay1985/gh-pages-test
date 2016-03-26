@@ -20,7 +20,7 @@ $(document).ready(function() {
       author = item.author;        
       //appends data to the div with the message class
       console.log(color);
-      div.append("<blockquote><span class='quotes'>"+ quote +"</span>"+ "<footer style='color:'"+ color +">" + author + "</footer></blockquote>");
+      div.append("<blockquote><span class='quotes'>"+ quote +"</span>"+ "<footer style='color:"+ color +"'>" + author + "</footer></blockquote>");
       quote = quote.replace(" ", "%20");
       $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
