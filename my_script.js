@@ -5,10 +5,10 @@ $(document).ready(function() {
   var quote = $(".quotes").html().replace(" ", "%20");
   var author;
   var color = colors[Random(5)];
-  $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $(".body-clr").css("background-color", color);
   $(".txt-clr").css("color", color);
   $(".box-clr").css("background-color", "#fff");
+  $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
     ajax_test(function(array) {
@@ -20,6 +20,10 @@ $(document).ready(function() {
         author = item.author;
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
+        color = colors[Random(5)];
+        $(".body-clr").css("background-color", color);
+        $(".txt-clr").css("color", color);
+        $(".box-clr").css("background-color", "#fff");
         quote = quote.replace(" ", "%20");
         $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
