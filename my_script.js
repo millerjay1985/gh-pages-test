@@ -2,12 +2,12 @@
 $(document).ready(function() {
   //triggers ajax method once new quote button is pushed
   var item;
-  var quote = $(".quotes").html();
-  quote = quote.replace(" ", "%20");
+  var quote = $(".quotes").html().replace(" ", "%20");
   var author;
+  var color = colors[Random(5)];
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
-  $(".body-clr").css("background-color", colors[Random(5)]);
-  console.log(colors[Random(5)]);
+  $(".body-clr").css("background-color", color);
+  $(".txt-color").css("color", color);
   $(".box-clr").css("background-color", "#fff");
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
