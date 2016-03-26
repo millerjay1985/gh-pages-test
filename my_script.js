@@ -27,7 +27,7 @@ $(document).ready(function() {
 });
 
 var uniqueRandoms = [];
-var numRandoms = 2;
+var numRandoms = 8;
 function Random() {
     // refill the array if needed
     if (!uniqueRandoms.length) {
