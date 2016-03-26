@@ -58,7 +58,7 @@ blockquote footer {
   margin-bottom: 5%;
 }
 
-.mybutton {
-  color: #fff;
-  background-color: #ccc;
+.btn-default {
+  color: #fff !important;
+  background-color: #ccc !important;
 }
