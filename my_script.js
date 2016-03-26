@@ -40,10 +40,9 @@ function ajax_test(callback){
      }
    });  
 }  
-
+var uniqueRandoms = [];
 function Random(numRandoms) {
     // refill the array if needed
-    var uniqueRandoms = [];
     if (!uniqueRandoms.length) {
         for (var i = 0; i < numRandoms; i++) {
             uniqueRandoms.push(i);
@@ -56,11 +55,25 @@ function Random(numRandoms) {
     return val;
 }
 
+var uniqueRandoms2 = [];
+function Random2(numRandoms) {
+    // refill the array if needed
+    if (!uniqueRandoms2.length) {
+        for (var i = 0; i < numRandoms; i++) {
+            uniqueRandoms2.push(i);
+        }
+    }
+    var index = Math.floor(Math.random() * uniqueRandoms.length);
+    var val = uniqueRandoms2[index];
+    // now remove that value from the array
+    uniqueRandoms2.splice(index, 1);
+    return val;
+}
 var colors = ["#6600CC", "#9999FF", "#33CCFF", "#990066", "#FF6633"];
 
 //generates random color from the colors array
 function colorChange(){
-  color = colors[Random(5)];
+  color = colors[Random2(5)];
   $(".body-clr").css("background-color", color);
   $(".txt-clr").css("color", color);
   $("footer").css("color", color);
