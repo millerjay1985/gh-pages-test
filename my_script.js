@@ -2,7 +2,7 @@
 $(document).ready(function() {
   //triggers ajax method once new quote button is pushed
   var item;
-  var quote;
+  var quote = $(".message").html();
   var author;
   $('#getMessage').click(function(){ 
     //ajax method allows us to use JSONP with git-pages
@@ -32,7 +32,7 @@ $(document).ready(function() {
     size: "large",
     //via: "twitterdev",
     related: "twitterapi,twitter",
-    text: "hey",
+    text: quote,
     hashtags: "me"
   }
 );
