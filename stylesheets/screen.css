@@ -52,10 +52,11 @@ blockquote footer {
 
 .lower {
   position: relative;
-  width: 98%;
+  /*width: 98%;
   margin-top: 2%;
   margin-left: 1%;
-  margin-bottom: 5%;
+  margin-bottom: 5%;*/
+  margin:0;
 }
 
 .btn-default {
