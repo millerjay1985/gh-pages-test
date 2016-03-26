@@ -2,28 +2,27 @@
 $(document).ready(function() {
   //triggers ajax method once new quote button is pushed
   var item;
+  var color;
   var quote = $(".quotes").html().replace(" ", "%20");
   var author;
   colorChange();
   $(".box-clr").css("background-color", "#fff");
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $('#getMessage').click(function(){ 
-
+    colorChange();
     //this is the ajax method being called 
     ajax_test(function(array) {
-        var div = $(".message");
-        //first empty the div
-        div.empty();
-        item = array[Random(15)];
-        quote = item.quote;
-        author = item.author;
-        //appends data to the div with the message class
-        div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
-        quote = quote.replace(" ", "%20");
-        $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
+      var div = $(".message");
+      //first empty the div
+      div.empty();
+      item = array[Random(15)];
+      quote = item.quote;
+      author = item.author;        
+      //appends data to the div with the message class
+      div.append("<blockquote>"+ quote + "<footer style='color:'+ color>" + author + "</footer>" + "</blockquote>");
+      quote = quote.replace(" ", "%20");
+      $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
-    
-    colorChange();
   });
 });
 
@@ -61,7 +60,7 @@ var colors = ["#6600CC", "#9999FF", "#33CCFF", "#990066", "#FF6633"];
 
 //generates random color from the colors array
 function colorChange(){
-  var color = colors[Random(5)];
+  color = colors[Random(5)];
   $(".body-clr").css("background-color", color);
   $(".txt-clr").css("color", color);
   $("footer").css("color", color);
