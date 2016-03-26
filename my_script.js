@@ -19,7 +19,8 @@ $(document).ready(function() {
       quote = item.quote;
       author = item.author;        
       //appends data to the div with the message class
-      div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
+      div.append("<blockquote>"+ quote +"</blockquote>");
+      $(footer).html(author);
       quote = quote.replace(" ", "%20");
       $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
