@@ -18,8 +18,8 @@ $(document).ready(function() {
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
         quote = quote.replace(" ", "%20");
-        $("a[href='https://twitter.com/share]").attr('href', 'https://twitter.com/share?text=' + quote);
-        $('#tweet').html(quote);
+        //$("a[href='https://twitter.com/share]").attr('href', 'https://twitter.com/share?text=' + quote);
+        $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
   });
   /*
