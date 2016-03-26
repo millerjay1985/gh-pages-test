@@ -30,10 +30,10 @@ $(document).ready(function() {
   document.getElementById("tweet"),
   {
     size: "large",
-    via: "twitterdev",
+    //via: "twitterdev",
     related: "twitterapi,twitter",
-    text: "custom share text",
-    hashtags: "example,demo"
+    text: quote,
+    hashtags: author
   }
 );
 });
