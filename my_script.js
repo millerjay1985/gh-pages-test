@@ -2,7 +2,7 @@
 $(document).ready(function() {
   //triggers ajax method once new quote button is pushed
   var item;
-  var quote = $(".message.blockquote").html();
+  var quote = $(".quotes").html();
   var author;
   $('#getMessage').click(function(){ 
     //ajax method allows us to use JSONP with git-pages
