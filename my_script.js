@@ -15,20 +15,19 @@ $(document).ready(function() {
         author = item.author;
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
+        
+        twttr.widgets.createShareButton(
+          "https:\/\/dev.twitter.com\/web\/tweet-button",
+          document.getElementById("tweet"),
+          {
+            size: "large",
+            //via: "twitterdev",
+            related: "twitterapi,twitter",
+            text: quote,
+            hashtags: "me"
+        });
     });
   });
-  
-  twttr.widgets.createShareButton(
-  "https:\/\/dev.twitter.com\/web\/tweet-button",
-  document.getElementById("tweet"),
-  {
-    size: "large",
-    //via: "twitterdev",
-    related: "twitterapi,twitter",
-    text: quote,
-    hashtags: "me"
-  }
-);
 });
 
 //this function returns an array from the callback function in the JSONP file
