@@ -1,11 +1,11 @@
 
 $(document).ready(function() {
   //triggers ajax method once new quote button is pushed
+  var item;
+  var quote;
+  var author;
   $('#getMessage').click(function(){ 
     //ajax method allows us to use JSONP with git-pages
-    var item;
-    var quote;
-    var author;
     $.ajax({
       //this is the url to my json.js file
       url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
@@ -32,8 +32,8 @@ $(document).ready(function() {
     size: "large",
     //via: "twitterdev",
     related: "twitterapi,twitter",
-    text: quote,
-    hashtags: author
+    text: "hey",
+    hashtags: "me"
   }
 );
 });
