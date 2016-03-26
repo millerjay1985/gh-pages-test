@@ -19,6 +19,7 @@ $(document).ready(function() {
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
         quote = quote.replace(" ", "%20");
         $("a[href='https://twitter.com/share]").attr('href', 'https://twitter.com/share?text=' + quote);
+        $('#tweet').html(quote);
     });
   });
   /*
