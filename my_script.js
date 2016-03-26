@@ -15,7 +15,7 @@ $(document).ready(function() {
         author = item.author;
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
-        
+        $("a[href='https://twitter.com/share]").attr('href', 'https://twitter.com/sharet?text=Hello%20world')
     });
   });
   /*
