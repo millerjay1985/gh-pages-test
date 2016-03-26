@@ -22,7 +22,7 @@ div.shell {
 .mybox button{
   color:#fff;
   margin: 15px !important;
-  background-color: #ccc;
+  /*background-color: #ccc;*/
 }
 
 .inner {
@@ -31,20 +31,20 @@ div.shell {
   margin-top: 2%;
   margin-left: 1%;
   height: 65%;
-  color: #ccc;
+  /*color: #ccc;*/
 }
 
 blockquote {
   font-family: 'Fjalla One', sans-serif !imporatant;
   font-size: 35px !important;
-  color: #ccc;
+  /*color: #ccc;*/
   border: 0 !important;
   //padding: 30px 25px 15px 25px;
 }
 
 blockquote footer {
   text-align: right;
-  color: #ccc !important;
+  /*color: #ccc !important;*/
   font-size: 20px !important;
   padding-top: 20px !important;
   padding-right:20px !important;
@@ -61,10 +61,12 @@ blockquote footer {
 
 .btn-default {
   color: #fff !important;
-  background-color: #ccc !important;
+  /*background-color: #ccc !important;*/
   font-size: 20px;
 }
 
 a{
   margin-bottom: 10px;
 }
+
+.
