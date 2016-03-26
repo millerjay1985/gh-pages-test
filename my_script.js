@@ -24,6 +24,18 @@ $(document).ready(function() {
       }
     });
   });
+  
+  twttr.widgets.createShareButton(
+  "https:\/\/dev.twitter.com\/web\/tweet-button",
+  document.getElementById("tweet"),
+  {
+    size: "large",
+    via: "twitterdev",
+    related: "twitterapi,twitter",
+    text: "custom share text",
+    hashtags: "example,demo"
+  }
+);
 });
 
 var uniqueRandoms = [];
