@@ -63,12 +63,13 @@ function Random2(numRandoms) {
             uniqueRandoms2.push(i);
         }
     }
-    var index = Math.floor(Math.random() * uniqueRandoms.length);
+    var index = Math.floor(Math.random() * uniqueRandoms2.length);
     var val = uniqueRandoms2[index];
     // now remove that value from the array
     uniqueRandoms2.splice(index, 1);
     return val;
 }
+
 var colors = ["#6600CC", "#9999FF", "#33CCFF", "#990066", "#FF6633"];
 
 //generates random color from the colors array
