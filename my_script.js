@@ -7,7 +7,7 @@ $(document).ready(function() {
   var color = colors[Random(5)];
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $(".body-clr").css("background-color", color);
-  $(".txt-color").css("color", color);
+  $(".txt-clr").css("color", color);
   $(".box-clr").css("background-color", "#fff");
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
