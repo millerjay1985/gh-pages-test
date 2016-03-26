@@ -21,7 +21,8 @@ $(document).ready(function() {
         author = item.author;
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>"); 
-      }
+      },
+      async: false // <- this turns it into synchronous
     });
   });
   
