@@ -6,7 +6,7 @@ $(document).ready(function() {
   var author;
   $('#getMessage').click(function(){ 
     //ajax method allows us to use JSONP with git-pages
-    $.ajax({
+    /*$.ajax({
       //this is the url to my json.js file
       url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
       dataType: "jsonp",
@@ -22,7 +22,18 @@ $(document).ready(function() {
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>"); 
       },
-      async: false // <- this turns it into synchronous
+      //async: false // <- this turns it into synchronous
+    });*/
+    
+    ajax_test(function(item, quote, author) {
+        var div = $(".message");
+        //first empty the div
+        div.empty();
+        item = data[Random()];
+        quote = item.quote;
+        author = item.author;
+        //appends data to the div with the message class
+        div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
     });
   });
   
@@ -37,6 +48,30 @@ $(document).ready(function() {
     hashtags: "me"
   }
 );
+});
+
+function ajax_test(callback){  
+   $.ajax({
+      //this is the url to my json.js file
+      url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
+      dataType: "jsonp",
+      //this is the name of the function in my .json.js file
+      jsonpCallback: "myFunction",
+      success: function(data) {  
+        callback(data);
+     }
+   });  
+}  
+
+ajax_test(function(item, quote, author) {
+  var div = $(".message");
+        //first empty the div
+        div.empty();
+        item = data[Random()];
+        quote = item.quote;
+        author = item.author;
+        //appends data to the div with the message class
+        div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
 });
 
 var uniqueRandoms = [];
