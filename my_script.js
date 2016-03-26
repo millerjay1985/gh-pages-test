@@ -41,10 +41,9 @@ function ajax_test(callback){
    });  
 }  
 
-var uniqueRandoms = [];
-
 function Random(numRandoms) {
     // refill the array if needed
+    var uniqueRandoms = [];
     if (!uniqueRandoms.length) {
         for (var i = 0; i < numRandoms; i++) {
             uniqueRandoms.push(i);
