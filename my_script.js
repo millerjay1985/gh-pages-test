@@ -5,7 +5,7 @@ $(document).ready(function() {
   var quote = $(".quotes").html();
   quote = quote.replace(" ", "%20");
   var author;
-  $("a[href='http://twitter.com/share']").attr('href', 'https://twitter.com/share?text=' + quote);
+  $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
     ajax_test(function(array) {
@@ -18,7 +18,6 @@ $(document).ready(function() {
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
         quote = quote.replace(" ", "%20");
-        //$("a[href='https://twitter.com/share]").attr('href', 'https://twitter.com/share?text=' + quote);
         $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
   });
