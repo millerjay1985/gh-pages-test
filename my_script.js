@@ -9,7 +9,7 @@ $(document).ready(function() {
   $(".box-clr").css("background-color", "#fff");
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $('#getMessage').click(function(){ 
-    colorChange();
+    color = colorChange();
     //this is the ajax method being called 
     ajax_test(function(array) {
       var div = $(".message");
@@ -64,6 +64,7 @@ function colorChange(){
   color = colors[Random(5)];
   $(".body-clr").css("background-color", color);
   $(".txt-clr").css("color", color);
+  return color;
 }
 /*
 
