@@ -18,7 +18,7 @@ $(document).ready(function() {
         
     });
   });
-  
+  /*
   twttr.widgets.createShareButton(
           "https:\/\/dev.twitter.com\/web\/tweet-button",
           document.getElementById("tweet"),
@@ -28,7 +28,7 @@ $(document).ready(function() {
             related: "twitterapi,twitter",
             text: quote,
             hashtags: "me"
-        });
+        });*/
 });
 
 //this function returns an array from the callback function in the JSONP file
