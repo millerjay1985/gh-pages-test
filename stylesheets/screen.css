@@ -61,7 +61,7 @@ blockquote footer {
 #twitter-follow-bt {
   width: 160px;
   height: 30px;
-  background: url(twitter-follow-button.png) no-repeat;
+  background-color: #ccc;
 }
     
 #twitter-follow-bt * {
