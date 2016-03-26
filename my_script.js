@@ -64,6 +64,7 @@ function colorChange(){
   color = colors[Random(5)];
   $(".body-clr").css("background-color", color);
   $(".txt-clr").css("color", color);
+  $("footer").css("color", color);
   return color;
 }
 /*
