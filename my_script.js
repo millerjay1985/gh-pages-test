@@ -8,8 +8,6 @@ $(document).ready(function() {
   $(".box-clr").css("background-color", "#fff");
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $('#getMessage').click(function(){ 
-    
-    colorChange();
 
     //this is the ajax method being called 
     ajax_test(function(array) {
@@ -24,6 +22,8 @@ $(document).ready(function() {
         quote = quote.replace(" ", "%20");
         $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
+    
+    colorChange();
   });
 });
 
