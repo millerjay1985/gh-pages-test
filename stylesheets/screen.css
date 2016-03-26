@@ -62,6 +62,8 @@ blockquote footer {
   width: 160px;
   height: 30px;
   background-color: #ccc;
+  color: #fff;
+  border-radius: 5px;
 }
     
 #twitter-follow-bt * {
