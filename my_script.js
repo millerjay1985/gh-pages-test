@@ -16,6 +16,7 @@ $(document).ready(function() {
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
         
+        $("#tweet").remove();
         twttr.widgets.createShareButton(
           "https:\/\/dev.twitter.com\/web\/tweet-button",
           document.getElementById("tweet"),
