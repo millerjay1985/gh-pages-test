@@ -5,7 +5,7 @@ $(document).ready(function() {
   var quote = $(".quotes").html();
   quote = quote.replace(" ", "%20");
   var author;
-  $("a[href='http://twitter.com/share?text=hey%20sugar']").attr('href', 'https://twitter.com/share?text=' + quote);
+  $("a[href='http://twitter.com/share']").attr('href', 'https://twitter.com/share?text=' + quote);
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
     ajax_test(function(array) {
