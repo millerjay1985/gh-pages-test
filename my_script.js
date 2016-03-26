@@ -6,7 +6,8 @@ $(document).ready(function() {
   quote = quote.replace(" ", "%20");
   var author;
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
-  $(".")
+  $(".body-clr").css("background-color", colors[Random(5)]);
+  $(".box-clr").css("background-color", "#fff");
   $('#getMessage').click(function(){ 
     //this is the ajax method being called 
     ajax_test(function(array) {
