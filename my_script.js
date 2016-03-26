@@ -63,7 +63,7 @@ var colors = ["#6600CC", "#9999FF", "#33CCFF", "#990066", "#FF6633"];
 function colorChange(){
   var color = colors[Random(5)];
   $(".body-clr").css("background-color", color);
-  $(".txt-clr").css("color", color);
+  $(".txt-clr").css("color", color + " !important");
 }
 /*
 
