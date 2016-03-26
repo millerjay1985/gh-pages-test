@@ -61,4 +61,6 @@ blockquote footer {
 .btn-default {
   color: #fff !important;
   background-color: #ccc !important;
+  height: 10px;
+  width: 15px;
 }
