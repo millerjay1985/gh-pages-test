@@ -24,7 +24,7 @@ $(document).ready(function() {
 });
 
 var uniqueRandoms = [];
-var numRandoms = 5;
+var numRandoms = 6;
 function Random() {
     // refill the array if needed
     if (!uniqueRandoms.length) {
