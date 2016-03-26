@@ -4,9 +4,7 @@ $(document).ready(function() {
   var item;
   var quote = $(".quotes").html().replace(" ", "%20");
   var author;
-  var color = colors[Random(5)];
-  $(".body-clr").css("background-color", color);
-  $(".txt-clr").css("color", color);
+  colorChange();
   $(".box-clr").css("background-color", "#fff");
   $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
   $('#getMessage').click(function(){ 
@@ -20,10 +18,7 @@ $(document).ready(function() {
         author = item.author;
         //appends data to the div with the message class
         div.append("<blockquote>"+ quote + "<footer>" + author + "</footer>" + "</blockquote>");
-        color = colors[Random(5)];
-        $(".body-clr").css("background-color", color);
-        $(".txt-clr").css("color", color);
-        $(".box-clr").css("background-color", "#fff");
+        colorChange();
         quote = quote.replace(" ", "%20");
         $("#tweet").prop("href", "https://twitter.com/share?text=" + quote);
     });
@@ -61,6 +56,13 @@ function Random(numRandoms) {
 }
 
 var colors = ["#6600CC", "#9999FF", "#33CCFF", "#990066", "#FF6633"];
+
+//generates random color from the colors array
+function colorChange(){
+  var color = colors[Random(5)];
+  $(".body-clr").css("background-color", color);
+  $(".txt-clr").css("color", color);
+}
 /*
 
 var q1 = '<blockquote>"Victory goes to the player who makes the next-to-last mistake."<footer> Savielly Grigorievitch Tartakower </footer></blockquote>';
