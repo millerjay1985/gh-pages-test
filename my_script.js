@@ -40,6 +40,13 @@ function ajax_test(callback){
      }
    });  
 }  
+
+/*  The following two functions can probably be combined
+ *  into one function, which takes an array as 
+ *  one of the parameters
+ */
+
+// generates random numbers
 var uniqueRandoms = [];
 function Random(numRandoms) {
     // refill the array if needed
